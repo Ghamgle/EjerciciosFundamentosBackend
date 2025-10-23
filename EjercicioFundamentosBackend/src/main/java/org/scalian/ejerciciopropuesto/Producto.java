@@ -1,6 +1,6 @@
 package org.scalian.ejerciciopropuesto;
 
-public record Producto(String nombre, double precio, String Descripcion){
+public record Producto(String nombre, double precio, String categoria){
     public Producto {
         if (nombre ==null || nombre.isBlank()){
             throw new IllegalArgumentException("El nombre es obligatorio");
